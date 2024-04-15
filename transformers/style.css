@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+#imagemP{
+    background-image: url(https://wallpaper.dog/large/639330.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.title{
+    color: royalblue;
+}
+
+.b1, .b2{
+    padding: 10px 5px;
+    background-color:gray;
+    color:goldenrod;
+    border: 3px solid darkkhaki;
+    border-radius: 15px;
+}
+
+.trailer{
+    text-decoration: none;
+    padding: 10px 5px;
+    background-color: brown;
+    color: gold;
+    border-radius: 15px;
+    border: 2px solid royalblue;
+}
