@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="/calculadora2.js" defer ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous" defer></script>
+   
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1 class="text-center  title">Calculadora Dev</h1>
+    
+     <div id="conteudo" class="container-fluid">
+        <button id="adi" class="mb-4" onclick="mais()" >Adição + </button>
+        <button id="sub" class="mb-4" onclick="menos()">Subtração - </button>
+        <button id="multi" class="mb-4" onclick="vezes()">Multiplicação * </button>
+        <button id="div" class="mb-4" onclick="divi()">Divisão / </button>
+    </div> 
+
+
+    <div id="operacao" class="container-fluid ">
+
+        <label for="num1" class="text-center pb-3">Digite um numero: </label>
+        <input name="num1" id="num1" type="number">
+        <br>
+        <br>
+        <label for="num2" class="text-center pb-3">Digite um numero: </label>
+        <input name="num2" id="num2" type="number">
+        <br>
+        <br>
+    </div>
+    
+    <div  class="aperte container-fluid">
+
+        <Button id="result1" onclick="result1()">Mostrar resultado</Button>
+        <Button id="result2" onclick="result2()">Mostrar resultado</Button>
+        <Button id="result3" onclick="result3()">Mostrar resultado</Button>
+        <Button id="result4" onclick="result4()">Mostrar resultado</Button>
+    </div>
+    <br>
+    <div id="resultado">
+        
+    </div>
+    <br>
+    <div class="back">
+
+        <button id="voltar" onclick="voltar()">Voltar</button> 
+    </div>
+
+</body>
+</html>

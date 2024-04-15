@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&family=DM+Sans:opsz@9..40&family=Rubik&family=Secular+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.aperte{
+display: flex;
+justify-content: center;
+}
+
+#result1, #result2, #result3, #result4{
+    display:none ;
+    padding: 15px;
+    border: 3px solid rgb(1, 96, 238);
+    border-radius: 50px;
+    cursor: pointer;
+    border-radius: 15px;
+    color: rgb(1, 96, 238);
+    font-size: 1.1rem;
+}
+
+#resultado{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'AR One Sans', sans-serif;
+}
+
+.back{
+    display: flex;
+    justify-content: start;
+}
+
+#voltar{
+    display:none;
+    padding: 15px;
+    border: 3px solid rgb(1, 96, 238);
+    border-radius: 50px;
+    cursor: pointer;
+    border-radius: 15px;
+    color: rgb(1, 96, 238);
+    font-size: 1.1rem;
+    margin-left: 1.5rem;
+}
+
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(13,107,84,1) 37%, rgba(0,212,255,1) 100%);
+}
+
+button{
+}
+
+#adi:hover{
+    background-color: rgb(52, 50, 50);
+    color:rgb(144, 238, 1) ;
+}
+
+#sub:hover{
+    background-color: rgb(52, 50, 50);
+    color:rgb(144, 238, 1) ;
+}
+
+#multi:hover{
+    background-color: rgb(52, 50, 50);
+    color:rgb(164, 255, 28)  ;
+}
+
+#div:hover{
+    background-color: rgb(52, 50, 50);
+    color:rgb(164, 255, 28) ;
+}
+
+#adi, #sub, #multi, #div{
+    padding: 15px;
+    border: 3px solid rgb(1, 96, 238);
+    border-radius: 50px;
+    cursor: pointer;
+    border-radius: 15px;
+    color: rgb(194, 97, 7);
+}
+
+h1.title{
+    padding: 1.5rem 0 2.5rem 0;
+    font-family: 'AR One Sans', sans-serif;
+    color:aliceblue;
+}
+
+#conteudo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 250px;
+}
+
+#operacao{
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+input{
+    padding: 8px;
+    border: 3px solid rgb(1, 96, 238);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+}
+
+label{
+    width: 250px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: 'DM Sans', sans-serif;
+    color: aliceblue;
+}
+
+@media  (max-width : 500px) {
+    #resultado{
+        padding-top: 2rem;
+    }
+
+    .back{
+        padding-top: 2rem;
+    }
+
+    #voltar{
+        margin-left: 1.25rem;
+    }
+}
+
+@media  (max-width : 435px) {
+    #resultado{
+        font-size: 1.5rem;
+    }
+}
+
+/* 
+font-family: 'AR One Sans', sans-serif;
+font-family: 'DM Sans', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Secular One', sans-serif; */
