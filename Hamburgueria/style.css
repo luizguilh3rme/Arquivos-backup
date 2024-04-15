@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Narnoor&display=swap');
+
+#divpag a{
+  text-decoration: none;
+    color: #00FF7F;
+    font-size: 24px;
+    padding: 1rem;
+    border: 1px solid #313999;
+    min-width: 4rem;
+    display: flex;
+    border-radius: 15px;
+    transition: .5s cubic-bezier(0.55, 0.025, 0.675, 0.97);
+}
+
+#divpag{
+  margin-top: 1rem;
+    display: flex;
+    font-family: 'Tilt Neon', cursive;
+    justify-content: center;
+}
+
+#divpag a:hover{
+  color: white;
+    background-color: #272D3B;
+}
+
+.Principal{
+  font-family: 'Raleway', sans-serif;
+}
+
+.Normal{
+  font-family: 'Narnoor', serif;
+}
+
+
+#mostrar{
+  display: none;
+  background: rgba(0, 0, 0, 0.867);
+}
+
+#mostrart{
+  display: none;
+  background: rgba(0, 0, 0, 0.867);
+}
+
+#mostrar2{
+  display: none;
+  background: rgba(0, 0, 0, 0.867);
+}
+
+#mostrar3{
+  display: none;
+  background: rgba(0, 0, 0, 0.867);
+}
+
+
+
+a{
+  text-decoration: none;
+}
+
+.bu{
+  position: relative;
+  display: flex;
+  height: 1px;
+}
+
+.bu span{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #4fc3dc;
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(125s/var(--i));
+  overflow: hidden;
+ 
+}
+
+
+.bu span:nth-child(even){
+  background: #ff2d75;
+  box-shadow: 0 0 0 10px #ff2d7544,
+  0 0 50px #ff2d75, 0 0 100px #ff2d75;
+}
+
+@keyframes animate{
+  0%{
+      transform: translateY(130vh) scale(0); 
+  }
+  100%{
+      transform: translateY(-50vh) scale(1);
+  }
+}

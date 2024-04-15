@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <title>Concessionária</title>
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="ai">
+
+
+    <nav class="navbar navbar-expand-lg bg-black col-12" style="z-index: 999;">
+      <div class="container-fluid col-11 m-auto">
+        <a class="navbar-brand text-primary me-5" href="#">Hseven</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item ">
+              <div class=" mx-auto p-2" style="width: 800px;display: flex;">
+                <div class="btn btn-outline-primary me-3 " onclick="promocoes()">
+                Promoções
+                </div>
+  
+               <div class="btn btn-outline-primary me-3 " onclick="especial()">
+                  Sobremesas
+                  </div> 
+          
+                <div class="btn btn-outline-primary me-3 " onclick="drink()">
+                  Bebidas
+                  </div>
+  
+                  <!-- <div class="btn btn-outline-primary  " onclick="acompanhamento()">
+                   Acompanhamento
+                    </div> -->
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+ 
+
+
+  <div class=" container-fluid text-center  " style="background-color: rgba(0, 0, 0, 0.867);">
+
+    <!-- animação -->
+    <div class="bu">
+      <span style="--i:11;"></span>
+      <span style="--i:12;"></span>
+      <span style="--i:24;"></span>
+      <span style="--i:10;"></span>
+      <span style="--i:14;"></span>
+      <span style="--i:23;"></span>
+      <span style="--i:18;"></span>
+      <span style="--i:16;"></span>
+      <span style="--i:19;"></span>
+      <span style="--i:20;"></span>
+      <span style="--i:22;"></span>
+      <span style="--i:25;"></span>
+      <span style="--i:18;"></span>
+      <span style="--i:21;"></span>
+      <span style="--i:15;"></span>
+      <span style="--i:13;"></span>
+      <span style="--i:26;"></span>
+      <span style="--i:17;"></span>
+      <span style="--i:13;"></span>
+      <span style="--i:28;"></span>
+      <span style="--i:11;"></span>
+      <span style="--i:12;"></span>
+      <span style="--i:24;"></span>
+      <span style="--i:10;"></span>
+      <span style="--i:14;"></span>
+      <span style="--i:23;"></span>
+      <span style="--i:18;"></span>
+      <span style="--i:16;"></span>
+      <span style="--i:19;"></span>
+      <span style="--i:20;"></span>
+      <span style="--i:22;"></span>
+      <span style="--i:25;"></span>
+      <span style="--i:18;"></span>
+      <span style="--i:21;"></span>
+      <span style="--i:15;"></span>
+      <span style="--i:13;"></span>
+      <span style="--i:26;"></span>
+      <span style="--i:17;"></span>
+      <span style="--i:13;"></span>
+      <span style="--i:28;"></span>
+      <span style="--i:11;"></span>
+      <span style="--i:12;"></span>
+      <span style="--i:24;"></span>
+      <span style="--i:10;"></span>
+      <span style="--i:14;"></span>
+      <span style="--i:23;"></span>
+    </div>
+
+<!-- titulo e logo -->
+  <div class="m-auto col-lg-6 col-sm-12">
+    <div class="p-3">
+      <div class="card w-50 m-auto" style="background-color: rgba(0, 0, 0, 0);border-color:rgba(0, 0, 0, 0);">
+        <!-- <h1 class="card-title text-warning mb-3">Hamburgueria</h1> -->
+<img src="./imgs-p/hamburguer.png" class="card-img-top" alt="..." height="300px" width="300px">
+<div class="card-body">
+</div>
+</div>
+    </div>
+  </div>
+
+
+  <div>
+    <h2 class="text-warning text-center pt-2 pb-2 ">Especiais do mês :</h2> 
+  </div>
+
+  <div id="carouselExampleInterval" class="carousel slide col-9 m-auto" data-bs-ride="carousel" style="height: 400px;border: 7px yellow solid;border-radius: 7px;">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="7000">
+        <img src="./Img_promocao/pexels-thiago-lazaro-2874989 (1).jpg" class="d-block w-100" alt="..." style="height: 386px;" >
+        <div class="carousel-caption  d-md-block">
+          <h5>X-TUDO</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="7000">
+        <img src="./Img_promocao/pexels-daniel-reche-1556698.jpg" class="d-block w-100" alt="..." style="height: 386px;">
+        <div class="carousel-caption  d-md-block">
+          <h5>X-EGG</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="7000">
+        <img src="./Img_promocao/pexels-erwin-quintana-7963144.jpg" class="d-block w-100" alt="..." style="height: 386px;">
+        <div class="carousel-caption  d-md-block">
+          <h5>X-TUDO DE FRANGO</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+<br>
+  <!-- Cardapio -->
+  <div>
+    <h2 class="text-warning text-center pt-5" >Cardapio :</h2> 
+  </div>
+
+  <!-- Container Principal -->
+  <div class="container-fluid pt-2" >
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+
+
+                  <!-- Big Carne -->
+    <div class="col">
+      <div class="card bg-black" style="height: 590px;">         
+        <h4 class="card-header text-warning">Big Carne</h4>
+        <img src="./imgs-p/quer_fazer_hamburger_artesanal_perfeito_2019-05-14.jpg" class="card-img-top" alt="..." height="400px">
+          <div class="card-body">
+            <h5 class="card-subtitle text-center text-light">Preço: R$ 15.00</h5>
+            <p class="card-text text-warning">Uma carne artesanal de primeira qualidade com 4cm de altura e uma salada completa com alface, cebola, tomate e outros.</p>
+              <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+  Comprar
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop4"   data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel4" aria-hidden="true">
+  <div class=" modal-dialog  modal-xl" >
+    <div class="modal-content bg-black" style="border:solid 3px white;">
+      <div class="modal-header ">
+        <div class="col-6">
+
+          <h1 class="modal-title fs-4 m-auto text-warning Principal" id="staticBackdropLabel4"><b>Hamburguer Big Carne</b></h1>
+        </div>
+        <div class="col-6">
+
+          <button type="button"  class="btn-close d-flex flex-end me-3 bg-warning" data-bs-dismiss="modal" aria-label="Close">
+            
+          </button>
+        </div>
+      </div>
+      <div class="modal-body">
+
+        <!-- imagem e preço  -->
+        <div class="row">
+          <div class="col-6">
+            <img src="./imgs-p/quer_fazer_hamburger_artesanal_perfeito_2019-05-14.jpg" width="350px" height="350px" style="border-radius: 15px;" alt="">
+            <p class="lead text-warning Normal">R$ 20.00</p>
+          </div>
+
+          <!-- acompanhamento  -->
+          <div class="col-6" >
+            <h4 class="mb-3 text-warning Principal"><b>Acompanhamento</b></h4>
+              <div class="row" >
+                <div class="col-6">
+                  <div >
+                    <p class="lead d-flex flex-start text-light Normal">Chips de batata doce</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div >
+                    <div class="form-switch form-check-reverse">
+                      <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" style="width: 55px;height:30px;">
+                      <label class="form-check-label" for="reverseCheck1">
+                        
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          <hr>
+
+          <div class="row">
+            <div class="col-6">
+              <div >
+                <p class="lead d-flex flex-start text-light Normal">Banana Chips</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div >
+                <div class="form-switch form-check-reverse">
+                  <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" style="width: 55px;height:30px;">
+                  <label class="form-check-label" for="reverseCheck1">
+                    
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <div class="row">
+            <div class="col-6">
+              <div >
+                <p class="lead d-flex flex-start text-light Normal">Batata Rústica</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div >
+                <div class="form-switch form-check-reverse">
+                  <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" style="width: 55px;height:30px;">
+                  <label class="form-check-label" for="reverseCheck1">
+                    
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <div class="row">
+            <div class="col-6">
+              <div >
+                <p class="lead d-flex flex-start text-light Normal">Batata Frita</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div >
+                <div class="form-switch form-check-reverse">
+                  <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" style="width: 55px;height:30px;">
+                  <label class="form-check-label" for="reverseCheck1">
+                    
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <div class="row">
+            <div class="col-6">
+              <div >
+                <p class="lead d-flex flex-start text-light Normal">Batata Chips</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div >
+                <div class="form-switch form-check-reverse">
+                  <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" style="width: 55px;height:30px;">
+                  <label class="form-check-label" for="reverseCheck1">
+                    
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+          <div class="modal-footer"></div>
+
+          <!-- comentário do pedido  -->
+        <div class="row">
+          <div class="col-6">
+            <h4 class="text-warning Principal"><b>Comentário sobre o Pedido</b></h4>
+          <div class="form-floating">
+            <textarea name="" id="msg" class="form-control" style="height: 200px;" placeholder="Digite seu comentário"></textarea>            
+        </div>
+          </div>
+
+          <!-- pedido extra  -->
+          <div class="col-6">
+            <h4 class="text-warning Principal"><b>Extra</b></h4>
+          <div class="row">
+                <div class="col-6">
+                  <div >
+                    <p class="lead d-flex flex-start text-light Normal">Katchup</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div >
+                    <div class="form-switch form-check-reverse" >
+                      <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" style="width: 55px;height:30px;">
+                      <label class="form-check-label" for="reverseCheck1">
+                        
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          <hr>
+          <div class="row"> 
+            <div class="col-6 ">
+              <div >
+                <p class="lead d-flex flex-start text-light Normal">Maionese</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div >
+                <div class="form-switch form-check-reverse">
+                  <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" style="width: 55px;height:30px;">
+                  <label class="form-check-label" for="reverseCheck1" >
+                    
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-6">
+              <div >
+                <p class="lead d-flex flex-start text-light Normal">Molho Especial</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div >
+                <div class="form-switch form-check-reverse">
+                  <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" style="width: 55px;height:30px;">
+                  <label class="form-check-label" for="reverseCheck1">
+                    
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer  -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary Normal" data-bs-dismiss="modal">Finalizar compra</button>
+        <button type="button" class="btn btn-success">Adicionar ao carrinho</button>
+      </div>
+      </div>
+    </div>
+  </div>
+          </div>       
+      </div>
+  </div>
+  
+
+                    <!-- Extra Bacon -->
+    <div class="col">
+      <div class="card bg-black" style="height: 590px;">         
+        <h4 class="card-header text-warning">Extra Bacon</h4>
+<img src="./imgs-p/hamburguer-artesanal-696x464.jpg" class="card-img-top" alt="..." height="400px" >
+<div class="card-body">
+<h5 class="card-subtitle text-center text-light">Preço: R$ 15.00</h5>
+<p class="card-text text-warning">Criado para os amantes de bacon, possui em todas as suas camadas bacon bem assado e ainda queijo e carne.</p>
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+    Comprar
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade bacon" id="staticBackdrop3"   data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel3" aria-hidden="true">
+    <div class=" modal-dialog  modal-xl" >
+      <div class="modal-content bg-black" style="border:solid 3px white;">
+        <div class="modal-header ">
+          <div class="col-6">
+  
+            <h1 class="modal-title fs-4 m-auto text-warning Principal" id="staticBackdropLabel3"><b>Hamburguer Extra Bacon</b></h1>
+          </div>
+          <div class="col-6">
+  
+            <button type="button" class="btn-close d-flex flex-end me-3 bg-warning" data-bs-dismiss="modal" aria-label="Close">
+              
+            </button>
+          </div>
+        </div>
+        <div class="modal-body">
+  
+          <!-- imagem e preço  -->
+          <div class="row">
+            <div class="col-6">
+              <img src="./imgs-p/hamburguer-artesanal-696x464.jpg" width="350px" height="350px" style="border-radius: 15px;" alt="">
+              <p class="lead text-warning Normal">R$ 20.00</p>
+            </div>
+  
+            <!-- acompanhamento  -->
+            <div class="col-6" >
+              <h4 class="mb-3 text-warning Principal"><b>Acompanhamento</b></h4>
+                <div class="row" >
+                  <div class="col-6">
+                    <div >
+                      <p class="lead d-flex flex-start text-light Normal">Chips de batata doce</p>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div >
+                      <div class="form-switch form-check-reverse">
+                        <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" style="width: 55px;height:30px;">
+                        <label class="form-check-label" for="reverseCheck1">
+                          
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            <hr>
+  
+            <div class="row">
+              <div class="col-6">
+                <div >
+                  <p class="lead d-flex flex-start text-light Normal">Banana Chips</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div >
+                  <div class="form-switch form-check-reverse">
+                    <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" style="width: 55px;height:30px;">
+                    <label class="form-check-label" for="reverseCheck1">
+                      
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+  
+            <div class="row">
+              <div class="col-6">
+                <div >
+                  <p class="lead d-flex flex-start text-light Normal">Batata Rústica</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div >
+                  <div class="form-switch form-check-reverse">
+                    <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" style="width: 55px;height:30px;">
+                    <label class="form-check-label" for="reverseCheck1">
+                      
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+  
+            <div class="row">
+              <div class="col-6">
+                <div >
+                  <p class="lead d-flex flex-start text-light Normal">Batata Frita</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div >
+                  <div class="form-switch form-check-reverse">
+                    <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" style="width: 55px;height:30px;">
+                    <label class="form-check-label" for="reverseCheck1">
+                      
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+  
+            <div class="row">
+              <div class="col-6">
+                <div >
+                  <p class="lead d-flex flex-start text-light Normal">Batata Chips</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div >
+                  <div class="form-switch form-check-reverse">
+                    <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" style="width: 55px;height:30px;">
+                    <label class="form-check-label" for="reverseCheck1">
+                      
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+            <div class="modal-footer"></div>
+  
+            <!-- comentário do pedido  -->
+          <div class="row">
+            <div class="col-6">
+              <h4 class="text-warning Principal"><b>Comentário sobre o Pedido</b></h4>
+            <div class="form-floating">
+              <textarea name="" id="msg" class="form-control" style="height: 200px;" placeholder="Digite seu comentário"></textarea>            
+          </div>
+            </div>
+  
+            <!-- pedido extra  -->
+            <div class="col-6">
+              <h4 class="text-warning Principal"><b>Extra</b></h4>
+            <div class="row">
+                  <div class="col-6">
+                    <div >
+                      <p class="lead d-flex flex-start text-light Normal">Katchup</p>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div >
+                      <div class="form-switch form-check-reverse" >
+                        <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" style="width: 55px;height:30px;">
+                        <label class="form-check-label" for="reverseCheck1">
+                          
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            <hr>
+            <div class="row"> 
+              <div class="col-6 ">
+                <div >
+                  <p class="lead d-flex flex-start text-light Normal">Maionese</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div >
+                  <div class="form-switch form-check-reverse">
+                    <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" style="width: 55px;height:30px;">
+                    <label class="form-check-label" for="reverseCheck1" >
+                      
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-6">
+                <div >
+                  <p class="lead d-flex flex-start text-light Normal">Molho Especial</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div >
+                  <div class="form-switch form-check-reverse">
+                    <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" style="width: 55px;height:30px;">
+                    <label class="form-check-label" for="reverseCheck1">
+                      
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- footer  -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary Normal" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Finalizar compra</button>
+          <button type="button" class="btn btn-success" id="c1" onclick="alterar()">Adicionar ao carrinho</button>
+        </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Extra Bacon Segundo Modal -->
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered ">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title text-warning Principal" id="exampleModalToggleLabel2">Informaçoes do pedido</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="grid ">
+              <div class="row">
+                <div class="col-9">                
+                  <p class="d-flex flex-start"><b>1x Hamburguer Extra Bacon</b></p>
+                  <br>
+                  <p class="d-flex flex-start">Banana Chips, Batata Frita</p>
+                  <br>
+                  <p class="d-flex flex-start">katchup, Maionese, Molho Especial</p>               
+                </div>
+      
+                <!-- pedido extra  -->
+                <div class="col-3">
+                 <p><b>R$ 20,00</b></p>
+                 <br>
+                 <p>R$ 4,00 x 2</p>
+                 <br>
+                 <p>R$ 2,00 x 3</p>
+                </div>
+              </div>
+            </div>
+            <hr>
+
+            <div class="grid ">
+              <div class="row">
+                <div class="col-9">
+                <div class="informacoes">
+                  <p class="d-flex flex-start"><b>SubTotal</b></p>
+                  <br>
+                  <p class="d-flex flex-start">Taxa de Serviço</p>
+                  <br>
+                  <p class="d-flex flex-start">Taxa de Entrega</p>
+                </div>
+                </div>
+      
+                <!-- pedido extra  -->
+                <div class="col-3">
+                 <p>R$ 34,00</p>
+                 <br>
+                 <p>R$ 1,50</p>
+                 <br>
+                 <p><b>Grátis</b></p>
+                </div>
+              </div>
+            </div>
+            <hr>
+
+            <div class="grid">
+              <div class="row">
+                <div class="col-9">
+                  <h4 class="d-flex flex-start"><b>Total</b></h4>
+                </div>
+
+                <div class="col-3">
+                  <h4 class="d-flex flex-start"><b>R$ 35,50</b></h4>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#staticBackdrop3" data-bs-toggle="modal">Back to first</button>
+            <button type="button" class="btn btn-primary Normal" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">Escolher forma de pagamento</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- terceiro modal  -->
+    <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered ">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title text-warning Principal" id="exampleModalToggleLabel3">Escolher tipo de pagamento</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="grid ">
+              <div class="row ">
+                <div class="col-12 d-flex justify-content-around">                
+                  <input type="radio" class="btn-check" name="options-outlined" id="info-outlined" autocomplete="off">
+                    <label class="btn btn-outline-info col-3" for="info-outlined">
+                      <div>
+                        <h3>
+                          Pix
+                          <br>
+                          <img src="./imgs-f/logo-pix-png-920x920-removebg-preview.png" width="100px" height="100px" alt="">
+                        </h3>
+                      </div>
+                    </label>
+
+                    
+
+                  <input type="radio" class="btn-check" name="options-outlined" id="warning-outlined" autocomplete="off">
+                    <label class="btn btn-outline-warning col-3" for="warning-outlined">
+                      <div>
+                        <h3>
+                          Cartão
+                          <br>
+                          <img src="./imgs-f/bba217c27bedc2b0919504fd72e6caa3-removebg-preview.png" width="100px" height="100px" alt="">
+                        </h3>
+                      </div>
+                    </label>  
+                    
+                    
+                    
+                    <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success col-3" for="success-outlined">
+                      <div>
+                        <h3>
+                          Dinheiro
+                          <br>
+                          <img src="./imgs-f/41889-removebg-preview.png" width="100px" height="100px" alt="">
+                        </h3>
+                      </div>
+                    </label>  
+                </div>     
+              </div>
+            </div>
+
+            <br>
+            <br>
+            <div id="divpag">
+              <a href="#" class="d-flex end" id="Pagar">Pagar</a>
+            </div>
+
+          </div>        
+        </div>
+      </div>
+    </div>
+  
+
+
+          </div>       
+      </div>
+  </div>  
+
+  
+  
+  
+
+              <!-- Tradicional -->
+    <div class="col">
+      <div class="card bg-black" style="height: 590px;">         
+        <h4 class="card-header text-warning">Tradicional</h4>
+<img src="./imgs-p/bf1e20a4462b71e3cc4cece2a8c96ac8_XL.jpg" class="card-img-top" alt="..." style="height: 365px;">
+<div class="card-body">
+<h5 class="card-subtitle text-center text-light">Preço: R$ 10.00</h5>
+<p class="card-text text-warning">O simples também é delicioso, principalmente se envolver nossa carne artesanal e queijo.</p>
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+  Comprar
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop2"   data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel2" aria-hidden="true">
+  <div class=" modal-dialog  modal-xl" >
+    <div class="modal-content bg-black" style="border:solid 3px white;">
+      <div class="modal-header ">
+        <div class="col-6">
+
+          <h1 class="modal-title fs-4 m-auto text-warning Principal" id="staticBackdropLabel2"><b>Hamburguer Tradicional</b></h1>
+        </div>
+        <div class="col-6">
+
+          <button type="button" class="btn-close d-flex flex-end me-3 bg-warning" data-bs-dismiss="modal" aria-label="Close">
+            
+          </button>
+        </div>
+      </div>
+      <div class="modal-body">
+
+        <!-- imagem e preço  -->
+        <div class="row">
+          <div class="col-6">
+            <img src="./imgs-p/bf1e20a4462b71e3cc4cece2a8c96ac8_XL.jpg" width="350px" height="350px" style="border-radius: 15px;" alt="">
+            <p class="lead text-warning Normal">R$ 20.00</p>
+          </div>
+
+          <!-- acompanhamento  -->
+          <div class="col-6" >
+            <h4 class="mb-3 text-warning Principal"><b>Acompanhamento</b></h4>
+              <div class="row" >
+                <div class="col-6">
+                  <div >
+                    <p class="lead d-flex flex-start text-light Normal">Chips de batata doce</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div >
+                    <div class="form-switch form-check-reverse">
+                      <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" style="width: 55px;height:30px;">
+                      <label class="form-check-label" for="reverseCheck1">
+                        
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          <hr>
+
+          <div class="row">
+            <div class="col-6">
+              <div >
+                <p class="lead d-flex flex-start text-light Normal">Banana Chips</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div >
+                <div class="form-switch form-check-reverse">
+                  <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" style="width: 55px;height:30px;">
+                  <label class="form-check-label" for="reverseCheck1">
+                    
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <div class="row">
+            <div class="col-6">
+              <div >
+                <p class="lead d-flex flex-start text-light Normal">Batata Rústica</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div >
+                <div class="form-switch form-check-reverse">
+                  <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" style="width: 55px;height:30px;">
+                  <label class="form-check-label" for="reverseCheck1">
+                    
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <div class="row">
+            <div class="col-6">
+              <div >
+                <p class="lead d-flex flex-start text-light Normal">Batata Frita</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div >
+                <div class="form-switch form-check-reverse">
+                  <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" style="width: 55px;height:30px;">
+                  <label class="form-check-label" for="reverseCheck1">
+                    
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <div class="row">
+            <div class="col-6">
+              <div >
+                <p class="lead d-flex flex-start text-light Normal">Batata Chips</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div >
+                <div class="form-switch form-check-reverse">
+                  <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" style="width: 55px;height:30px;">
+                  <label class="form-check-label" for="reverseCheck1">
+                    
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+          <div class="modal-footer"></div>
+
+          <!-- comentário do pedido  -->
+        <div class="row">
+          <div class="col-6">
+            <h4 class="text-warning Principal"><b>Comentário sobre o Pedido</b></h4>
+          <div class="form-floating">
+            <textarea name="" id="msg" class="form-control" style="height: 200px;" placeholder="Digite seu comentário"></textarea>            
+        </div>
+          </div>
+
+          <!-- pedido extra  -->
+          <div class="col-6">
+            <h4 class="text-warning Principal"><b>Extra</b></h4>
+          <div class="row">
+                <div class="col-6">
+                  <div >
+                    <p class="lead d-flex flex-start text-light Normal">Katchup</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div >
+                    <div class="form-switch form-check-reverse" >
+                      <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" style="width: 55px;height:30px;">
+                      <label class="form-check-label" for="reverseCheck1">
+                        
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          <hr>
+          <div class="row"> 
+            <div class="col-6 ">
+              <div >
+                <p class="lead d-flex flex-start text-light Normal">Maionese</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div >
+                <div class="form-switch form-check-reverse">
+                  <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" style="width: 55px;height:30px;">
+                  <label class="form-check-label" for="reverseCheck1" >
+                    
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-6">
+              <div >
+                <p class="lead d-flex flex-start text-light Normal">Molho Especial</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div >
+                <div class="form-switch form-check-reverse">
+                  <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" style="width: 55px;height:30px;">
+                  <label class="form-check-label" for="reverseCheck1">
+                    
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer  -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary Normal" data-bs-dismiss="modal">Finalizar compra</button>
+        <button type="button" class="btn btn-success">Adicionar ao carrinho</button>
+      </div>
+      </div>
+    </div>
+  </div>
+          </div>       
+      </div>
+  </div>
+  
+
+                  <!-- Mega -->
+    <div class="col">
+      <div class="card bg-black" style="height: 590px;">         
+        <h4 class="card-header text-warning">Mega</h4>
+<img src="./imgs-p/Hamburguer-artesanal.webp" class="card-img-top" alt="..." height="400px">
+<div class="card-body">
+<h5 class="card-subtitle text-center text-light">Preço: R$ 20.00</h5>
+<p class="card-text text-warning">O artesanal tamanho família recheado com três carnes suculentas, queijo e bacon.</p>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Comprar
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop"   data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class=" modal-dialog  modal-xl" >
+    <div class="modal-content bg-black" style="border:solid 3px white;">
+      <div class="modal-header ">
+        <div class="col-6">
+
+          <h1 class="modal-title fs-4 m-auto text-warning Principal" id="staticBackdropLabel"><b>Hamburguer Mega</b></h1>
+        </div>
+        <div class="col-6">
+
+          <button type="button" class="btn-close d-flex flex-end me-3 bg-warning" data-bs-dismiss="modal" aria-label="Close">
+            
+          </button>
+        </div>
+      </div>
+      <div class="modal-body">
+
+        <!-- imagem e preço  -->
+        <div class="row">
+          <div class="col-6">
+            <img src="./imgs-p/Hamburguer-artesanal.webp" width="350px" height="350px" style="border-radius: 15px;" alt="">
+            <p class="lead text-warning Normal">R$ 20.00</p>
+          </div>
+
+          <!-- acompanhamento  -->
+          <div class="col-6" >
+            <h4 class="mb-3 text-warning Principal"><b>Acompanhamento</b></h4>
+              <div class="row" >
+                <div class="col-6">
+                  <div >
+                    <p class="lead d-flex flex-start text-light Normal">Chips de batata doce</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div >
+                    <div class="form-switch form-check-reverse">
+                      <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" style="width: 55px;height:30px;">
+                      <label class="form-check-label" for="reverseCheck1">
+                        
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          <hr>
+
+          <div class="row">
+            <div class="col-6">
+              <div >
+                <p class="lead d-flex flex-start text-light Normal">Banana Chips</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div >
+                <div class="form-switch form-check-reverse">
+                  <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" style="width: 55px;height:30px;">
+                  <label class="form-check-label" for="reverseCheck1">
+                    
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <div class="row">
+            <div class="col-6">
+              <div >
+                <p class="lead d-flex flex-start text-light Normal">Batata Rústica</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div >
+                <div class="form-switch form-check-reverse">
+                  <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" style="width: 55px;height:30px;">
+                  <label class="form-check-label" for="reverseCheck1">
+                    
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <div class="row">
+            <div class="col-6">
+              <div >
+                <p class="lead d-flex flex-start text-light Normal">Batata Frita</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div >
+                <div class="form-switch form-check-reverse">
+                  <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" style="width: 55px;height:30px;">
+                  <label class="form-check-label" for="reverseCheck1">
+                    
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <div class="row">
+            <div class="col-6">
+              <div >
+                <p class="lead d-flex flex-start text-light Normal">Batata Chips</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div >
+                <div class="form-switch form-check-reverse">
+                  <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" style="width: 55px;height:30px;">
+                  <label class="form-check-label" for="reverseCheck1">
+                    
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+          <div class="modal-footer"></div>
+
+          <!-- comentário do pedido  -->
+        <div class="row">
+          <div class="col-6">
+            <h4 class="text-warning Principal"><b>Comentário sobre o Pedido</b></h4>
+          <div class="form-floating">
+            <textarea name="" id="msg" class="form-control" style="height: 200px;" placeholder="Digite seu comentário"></textarea>            
+        </div>
+          </div>
+
+          <!-- pedido extra  -->
+          <div class="col-6">
+            <h4 class="text-warning Principal"><b>Extra</b></h4>
+          <div class="row">
+                <div class="col-6">
+                  <div >
+                    <p class="lead d-flex flex-start text-light Normal">Katchup</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div >
+                    <div class="form-switch form-check-reverse" >
+                      <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" style="width: 55px;height:30px;">
+                      <label class="form-check-label" for="reverseCheck1">
+                        
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          <hr>
+          <div class="row"> 
+            <div class="col-6 ">
+              <div >
+                <p class="lead d-flex flex-start text-light Normal">Maionese</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div >
+                <div class="form-switch form-check-reverse">
+                  <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" style="width: 55px;height:30px;">
+                  <label class="form-check-label" for="reverseCheck1" >
+                    
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-6">
+              <div >
+                <p class="lead d-flex flex-start text-light Normal">Molho Especial</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div >
+                <div class="form-switch form-check-reverse">
+                  <input class="form-check-input" type="checkbox" value="" id="reverseCheck1" style="width: 55px;height:30px;">
+                  <label class="form-check-label" for="reverseCheck1">
+                    
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer  -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary Normal" data-bs-dismiss="modal">Finalizar compra</button>
+        <button type="button" class="btn btn-success">Adicionar ao carrinho</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+          </div>       
+      </div>
+  </div>
+  
+
+
+
+
+</div>
+</div>
+<!-- </div> -->
+</div>
+</div>
+
+
+
+
+<!-- Promoções -->
+  <div class="container-fluid py-5" id="mostrar">
+    <h2 class="text-center text-warning">Promoções:</h2>
+    <a href="#" id="voltar" onclick="voltar()">Voltar</a>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+
+      <div class="col">
+          <div class="card bg-black">         
+            <h4 class="card-header text-center">X Burgue Duplo</h4>
+              <img src="https://picsum.photos/400/400" alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-subtitle text-center text-light">Preço: R$ 15.00</h5>
+                  <p class="card-text">Pão, dois hamburgueres, alface, tomate, maionese caseira e milho.</p>
+                  <a href="#" class="card-link">link1</a>
+                  <a href="#" class="card-link">link2</a>
+                  <a href="#" class="card-link">link3</a>
+              </div>
+              <div class="card-footer">rodapé</div>       
+          </div>
+      </div>
+  
+      <div class="col">
+          <div class="card bg-black">         
+            <h4 class="card-header text-center">X Chilli</h4>
+              <img src="https://picsum.photos/400/400" alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-subtitle text-center text-light">Preço: R$ 15.00</h5>
+                  <p class="card-text">Pão, hambúrguer, alface, tomate, molho de pimenta.</p>
+                  <a href="#" class="card-link">link1</a>
+                  <a href="#" class="card-link">link2</a>
+                  <a href="#" class="card-link">link3</a>
+              </div>
+              <div class="card-footer">rodapé</div>       
+          </div>
+      </div>
+  
+      <div class="col">
+          <div class="card bg-black"> 
+            <h4 class="card-header text-center">X Egg</h4>        
+              <img src="https://picsum.photos/400/400" alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-subtitle text-center text-light">Preço: R$ 15.00</h5>
+                  <p class="card-text">Pão, frango, alface, tomate, maionese, ovo e milho.</p>
+                  <a href="#" class="card-link">link1</a>
+                  <a href="#" class="card-link">link2</a>
+                  <a href="#" class="card-link">link3</a>
+              </div>
+              <div class="card-footer">rodapé</div>       
+          </div>
+      </div>
+
+      <div class="col">
+        <div class="card bg-black"> 
+          <h4 class="card-header text-center">Duplo Doriotos</h4>        
+            <img src="https://picsum.photos/400/400" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-subtitle text-center text-light">Preço: R$ 15.00</h5>
+                <p class="card-text">Pão, dois hamburgueres, alface, tomate, com doritos e maionese.</p>
+                <a href="#" class="card-link">link1</a>
+                <a href="#" class="card-link">link2</a>
+                <a href="#" class="card-link">link3</a>
+            </div>
+            <div class="card-footer">rodapé</div>       
+        </div>
+    </div>
+
+    <div class="col">
+      <div class="card bg-black"> 
+        <h4 class="card-header text-center">Santa Mostarda</h4>        
+          <img src="https://picsum.photos/400/400" alt="" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-subtitle text-center text-light">Preço: R$ 15.00</h5>
+              <p class="card-text">Pão, hambúrguer, alface, tomate, mostarda e cebola.</p>
+              <a href="#" class="card-link">link1</a>
+              <a href="#" class="card-link">link2</a>
+              <a href="#" class="card-link">link3</a>
+          </div>
+          <div class="card-footer">rodapé</div>       
+      </div>
+  </div>
+
+  <div class="col">
+    <div class="card bg-black"> 
+      <h4 class="card-header text-center">X Coração</h4>        
+        <img src="https://picsum.photos/400/400" alt="" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-subtitle text-center text-light">Preço: R$ 15.00</h5>
+            <p class="card-text">Pão, hambúrguer, alface, tomate, maionese caseira e coração.</p>
+            <a href="#" class="card-link">link1</a>
+            <a href="#" class="card-link">link2</a>
+            <a href="#" class="card-link">link3</a>
+        </div>
+        <div class="card-footer">rodapé</div>       
+    </div>
+</div>
+
+<div class="col">
+  <div class="card bg-black"> 
+    <h4 class="card-header text-center">X Calabresa</h4>        
+      <img src="https://picsum.photos/400/400" alt="" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-subtitle text-center text-light">Preço: R$ 15.00</h5>
+          <p class="card-text">Pão, hambúrguer, carne, queijo, calabresa e salada.</p>
+          <a href="#" class="card-link">link1</a>
+          <a href="#" class="card-link">link2</a>
+          <a href="#" class="card-link">link3</a>
+      </div>
+      <div class="card-footer">rodapé</div>       
+  </div>
+</div>
+
+<div class="col">
+  <div class="card bg-black"> 
+    <h4 class="card-header text-center">X Tudo</h4>        
+      <img src="https://picsum.photos/400/400" alt="" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-subtitle text-center text-light">Preço: R$ 15.00</h5>
+          <p class="card-text">Pão, hambúrguer, carne, queijo, ovo, bacon e salada.</p>
+          <a href="#" class="card-link">link1</a>
+          <a href="#" class="card-link">link2</a>
+          <a href="#" class="card-link">link3</a>
+      </div>
+      <div class="card-footer">rodapé</div>       
+  </div>
+</div>
+
+<div class="col">
+  <div class="card bg-black"> 
+    <h4 class="card-header text-center">X Fire</h4>        
+      <img src="https://picsum.photos/400/400" alt="" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-subtitle text-center text-light">Preço: R$ 15.00</h5>
+          <p class="card-text">Pão, hambúrguer, 2 carnes, 2 queijos, ovo, bacon, calabresa e salada.</p>
+          <a href="#" class="card-link">link1</a>
+          <a href="#" class="card-link">link2</a>
+          <a href="#" class="card-link">link3</a>
+      </div>
+      <div class="card-footer">rodapé</div>       
+  </div>
+</div>
+
+<div class="col">
+  <div class="card bg-black"> 
+    <h4 class="card-header text-center">Tri Fire</h4>        
+      <img src="https://picsum.photos/400/400" alt="" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-subtitle text-center text-light">Preço: R$ 15.00</h5>
+          <p class="card-text">Pão, hambúrguer, 3 carnes, 3 queijos, ovo, bacon, calabresa e salada.</p>
+          <a href="#" class="card-link">link1</a>
+          <a href="#" class="card-link">link2</a>
+          <a href="#" class="card-link">link3</a>
+      </div>
+      <div class="card-footer">rodapé</div>       
+  </div>
+</div>     
+  </div>
+  </div>
+
+
+  <!-- especiais -->
+  <!-- <div class="container-fluid py-5" id="mostrart" >
+    <h2 class="text-center text-warning">Especiais do mês:</h2>
+    <a href="#" id="voltar2" onclick="voltar2()">Voltar</a>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+
+      <div class="col">
+          <div class="card bg-black">         
+            <h4 class="card-header text-center">X Burgue Duplo</h4>
+              <img src="https://picsum.photos/400/400" alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-subtitle text-center text-light">Preço: R$ 15.00</h5>
+                  <p class="card-text">Pão, dois hamburgueres, alface, tomate, maionese caseira e milho.</p>
+                  <a href="#" class="card-link">link1</a>
+                  <a href="#" class="card-link">link2</a>
+                  <a href="#" class="card-link">link3</a>
+              </div>
+              <div class="card-footer">rodapé</div>       
+          </div>
+      </div>
+  
+      <div class="col">
+          <div class="card bg-black">         
+            <h4 class="card-header text-center">X Chilli</h4>
+              <img src="https://picsum.photos/400/400" alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-subtitle text-center text-light">Preço: R$ 15.00</h5>
+                  <p class="card-text">Pão, hambúrguer, alface, tomate, molho de pimenta.</p>
+                  <a href="#" class="card-link">link1</a>
+                  <a href="#" class="card-link">link2</a>
+                  <a href="#" class="card-link">link3</a>
+              </div>
+              <div class="card-footer">rodapé</div>       
+          </div>
+      </div>
+  
+      <div class="col">
+          <div class="card bg-black"> 
+            <h4 class="card-header text-center">X Egg</h4>        
+              <img src="https://picsum.photos/400/400" alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-subtitle text-center text-light">Preço: R$ 15.00</h5>
+                  <p class="card-text">Pão, frango, alface, tomate, maionese, ovo e milho.</p>
+                  <a href="#" class="card-link">link1</a>
+                  <a href="#" class="card-link">link2</a>
+                  <a href="#" class="card-link">link3</a>
+              </div>
+              <div class="card-footer">rodapé</div>       
+          </div>
+      </div>
+    </div>
+  </div> -->
+    
+
+      <!-- Bebidas -->
+  <div class="container-fluid py-5" id="mostrar2" >
+    <h2 class="text-center text-warning">Bebidas:</h2>
+    <a href="#" id="voltar3" onclick="voltar3()">Voltar</a>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+
+      <div class="col">
+          <div class="card bg-black " style="height: 590px;">         
+            <h4 class="card-header text-center">X Burgue Duplo</h4>
+              <img src="./Img_bebidas/frutas-vermelhas-ideais-para-ativar-o-metabolismo-1.jpg" alt="" class="card-img-top" height="370px" >
+              <div class="card-body">
+                <h5 class="card-subtitle text-center text-light">Preço: R$ 15.00</h5>
+                  <p class="card-text">Pão, dois hamburgueres, alface, tomate, maionese caseira e milho.</p>
+                  <a href="#" class="card-link">link1</a>
+                  <a href="#" class="card-link">link2</a>
+                  <a href="#" class="card-link">link3</a>
+              </div>
+                     
+          </div>
+      </div>
+  
+      <div class="col">
+          <div class="card bg-black " style="height: 590px;">         
+            <h4 class="card-header text-center">X Chilli</h4>
+              <img src="./Img_bebidas/suco-de-abacaxi-como-fazer-394.jpg" alt="" class="card-img-top" height="370px" >
+              <div class="card-body">
+                <h5 class="card-subtitle text-center text-light">Preço: R$ 15.00</h5>
+                  <p class="card-text">Pão, hambúrguer, alface, tomate, molho de pimenta.</p>
+                  <a href="#" class="card-link">link1</a>
+                  <a href="#" class="card-link">link2</a>
+                  <a href="#" class="card-link">link3</a>
+              </div>
+                  
+          </div>
+      </div>
+  
+      <div class="col">
+          <div class="card bg-black " style="height: 590px;"> 
+            <h4 class="card-header text-center">X Egg</h4>        
+              <img src="./Img_bebidas/suco-de-limao-desintoxicante_30808_l.webp" alt="" class="card-img-top" height="370px" >
+              <div class="card-body">
+                <h5 class="card-subtitle text-center text-light">Preço: R$ 15.00</h5>
+                  <p class="card-text">Pão, frango, alface, tomate, maionese, ovo e milho.</p>
+                  <a href="#" class="card-link">link1</a>
+                  <a href="#" class="card-link">link2</a>
+                  <a href="#" class="card-link">link3</a>
+              </div>
+                    
+          </div>
+      </div>
+
+      <div class="col">
+        <div class="card bg-black" style="height: 590px;"> 
+          <h4 class="card-header text-center">X Egg</h4>        
+            <img src="./Img_bebidas/XvG9mfmDbukWCd4rcEM6iSgjJFRvBDbC4cnybRFx.webp" alt="" class="card-img-top" height="370px" >
+            <div class="card-body">
+              <h5 class="card-subtitle text-center text-light">Preço: R$ 15.00</h5>
+                <p class="card-text">Pão, frango, alface, tomate, maionese, ovo e milho.</p>
+                <a href="#" class="card-link">link1</a>
+                <a href="#" class="card-link">link2</a>
+                <a href="#" class="card-link">link3</a>
+            </div>
+                  
+        </div>
+    </div>
+    </div>
+  </div>
+
+
+      <!-- Acompanhamento -->
+  <div class="container-fluid py-5" id="mostrar3" >
+    <h2 class="text-center text-warning">Acompanhamento:</h2>
+    <a href="#" id="voltar4" onclick="voltar4()">Voltar</a>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+
+      <div class="col">
+          <div class="card bg-black h-100">         
+            <h4 class="card-header text-center">X Burgue Duplo</h4>
+              <img src="./img_acompanhamento/pexels-alesia-kozik-6072032.jpg" alt="" class="card-img-top" height="420px">
+              <div class="card-body">
+                <h5 class="card-subtitle text-center text-light">Preço: R$ 15.00</h5>
+                  <p class="card-text">Pão, dois hamburgueres, alface, tomate, maionese caseira e milho.</p>
+                  <a href="#" class="card-link">link1</a>
+                  <a href="#" class="card-link">link2</a>
+                  <a href="#" class="card-link">link3</a>
+              </div>
+              <div class="card-footer">rodapé</div>       
+          </div>
+      </div>
+  
+      <div class="col">
+          <div class="card bg-black h-100">         
+            <h4 class="card-header text-center">X Chilli</h4>
+              <img src="./img_acompanhamento/pexels-damir-mijailovic-4617522.jpg" alt="" class="card-img-top" height="420px">
+              <div class="card-body">
+                <h5 class="card-subtitle text-center text-light">Preço: R$ 15.00</h5>
+                  <p class="card-text">Pão, hambúrguer, alface, tomate, molho de pimenta.</p>
+                  <a href="#" class="card-link">link1</a>
+                  <a href="#" class="card-link">link2</a>
+                  <a href="#" class="card-link">link3</a>
+              </div>
+              <div class="card-footer">rodapé</div>       
+          </div>
+      </div>
+  
+      <div class="col">
+          <div class="card bg-black h-100"> 
+            <h4 class="card-header text-center">X Egg</h4>        
+              <img src="./img_acompanhamento/pexels-iconcom-479628.jpg" alt="" class="card-img-top" height="420px">
+              <div class="card-body">
+                <h5 class="card-subtitle text-center text-light">Preço: R$ 15.00</h5>
+                  <p class="card-text">Pão, frango, alface, tomate, maionese, ovo e milho.</p>
+                  <a href="#" class="card-link">link1</a>
+                  <a href="#" class="card-link">link2</a>
+                  <a href="#" class="card-link">link3</a>
+              </div>
+              <div class="card-footer">rodapé</div>       
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  
+</body>
+</html>
